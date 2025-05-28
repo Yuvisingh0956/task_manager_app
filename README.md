@@ -1,9 +1,20 @@
-This is a Task manager app, which helps you to manage your tasks.
+# Task Manager App (MERN)
 
-## How to Run
+- This is a Task manager app, which helps you to manage your tasks.
 
-1. Clone the repo.
-2. Run `npm install` in both `/server` and `/client`.
-3. Add `.env` with `MONGO_URI` and `JWT_SECRET`.
-4. Start server: `npm run dev`.
-5. Start client: `npm start`.
+## Features
+
+- User registration & login (JWT)
+- Task CRUD (Create, Read, Update, Delete)
+- Status toggle (backlog → in-progress → done)
+- Redux state management
+
+## Setup
+
+1. Clone repo
+2. In `/server`, run `npm install` and add `.env`
+3. In `/client`, run `npm install`
+4. Start backend: `node server.js`
+5. Start frontend: `npm start`
+
+## Demo

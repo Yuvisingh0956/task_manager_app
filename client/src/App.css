@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 520px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 36px 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  max-width: 520px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a,
+nav button {
+  color: #1976d2;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav a:hover,
+nav button:hover {
+  color: #004ba0;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+button {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+input:focus {
+  outline: 2px solid #1976d2;
+  border-color: #1976d2;
+}
+
+button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #004ba0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  background: #f1f8ff;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(25, 118, 210, 0.03);
+  position: relative;
+}
+
+.task-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.status {
+  padding: 3px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.status.backlog {
+  background: #ffe082;
+  color: #795548;
+}
+.status.in-progress {
+  background: #b3e5fc;
+  color: #0277bd;
+}
+.status.done {
+  background: #c8e6c9;
+  color: #388e3c;
+}
+
+@media (max-width: 600px) {
+  .app-container,
+  nav {
+    max-width: 98vw;
+    padding: 14px;
   }
 }
