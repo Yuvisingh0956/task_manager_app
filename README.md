@@ -17,10 +17,10 @@ A full-stack MERN (MongoDB, Express, React, Node.js) task manager with user auth
 
 ## 📂 Folder Structure
 
-> task-manager/
-> ├── server/ # Express + MongoDB backend
-> │ ├── config/
-> │ ├── middleware/
+task-manager/
+├── server/ # Express + MongoDB backend│
+├── config/
+│ ├── middleware/
 │ ├── models/
 │ ├── routes/
 │ ├── .env
